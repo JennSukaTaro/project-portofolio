@@ -51,11 +51,7 @@
           >
             <span
               class="brand-mark theme-surface theme-border flex h-9 w-9 items-center justify-center rounded-xl border transition duration-300 group-hover:rotate-6 group-hover:border-soft/40"
-              ><img
-                src="assets/images/logo-ijal.png"
-                alt=""
-                class="brand-logo h-6 w-6 object-contain"
-              /></span>
+              ><img src="assets/images/logo-ijal.png" alt="Ijal Logo" width="24" height="24" loading="eager" class="brand-logo h-6 w-6 object-contain" /></span>
             <span
               >Ijal's <span class="text-soft">Creative</span> Portfolio</span
             >
@@ -161,7 +157,12 @@
           <div class="reveal">
             <div class="rounded-3xl border border-white/10 bg-secondary/25 p-3">
               <img
-                src="assets/images/photo-profile.svg"
+                src="assets/images/photo-profile.webp"
+                srcset="assets/images/photo-profile-500.webp 500w, assets/images/photo-profile.webp 1000w"
+                sizes="(max-width: 640px) 100vw, 420px"
+                width="1000"
+                height="1000"
+                loading="lazy"
                 alt="Photo of Ijal"
                 class="w-full rounded-2xl"
               />
@@ -347,26 +348,82 @@
           </div>
         </section>
         <section
+          id="contact"
           class="theme-surface reveal mt-20 rounded-3xl border border-white/10 bg-gradient-to-br from-accent/35 to-secondary/20 p-8 md:p-10"
         >
-          <div
-            class="flex flex-col gap-7 md:flex-row md:items-center md:justify-between"
-          >
+          <div class="contact-container">
             <div>
               <div class="section-label">Let's connect</div>
-              <h2 class="theme-text mt-3 text-2xl font-black text-white">
+              <h2 class="theme-text mt-3 text-3xl font-black text-white">
                 Have a project, idea, or question?
               </h2>
-              <p class="theme-muted mt-2 text-sm leading-7 text-muted">
-                Get in touch by email for questions, collaborations, or creative
-                work.
+              <p class="theme-muted mt-3 text-sm leading-7 text-muted">
+                Whether you have an inquiry, feedback on my projects, or an exciting collaboration idea, feel free to drop a message through this form.
               </p>
+              <div class="mt-8 grid gap-4 text-sm">
+                <div class="flex items-center gap-3 text-muted">
+                  <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 text-soft"><i class="fa-solid fa-envelope"></i></span>
+                  <span>afrizzal95@gmail.com</span>
+                </div>
+                <div class="flex items-center gap-3 text-muted">
+                  <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 text-soft"><i class="fa-solid fa-location-dot"></i></span>
+                  <span>Surabaya, Indonesia (EEPIS)</span>
+                </div>
+              </div>
             </div>
-            <a
-              href="mailto:afrizzal95@gmail.com"
-              class="btn-primary whitespace-nowrap"
-              ><i class="fa-solid fa-paper-plane"></i> Send an email</a
-            >
+
+            <div>
+              <div id="contact-status" class="form-alert hidden" role="alert"></div>
+              <form id="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name <span class="text-soft">*</span></label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    required
+                    placeholder="e.g. Idris Winarno"
+                    class="form-input"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email Address <span class="text-soft">*</span></label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    required
+                    placeholder="name@example.com"
+                    class="form-input"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">Subject <span class="text-soft">*</span></label>
+                  <input
+                    type="text"
+                    id="contact-subject"
+                    name="subject"
+                    required
+                    placeholder="Project Discussion / Collaboration"
+                    class="form-input"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">Message <span class="text-soft">*</span></label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    rows="4"
+                    required
+                    placeholder="Tell me about your idea or message..."
+                    class="form-textarea"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-primary w-full justify-center">
+                  <i class="fa-solid fa-paper-plane mr-1"></i> Send Message
+                </button>
+              </form>
+            </div>
           </div>
         </section>
       </main>

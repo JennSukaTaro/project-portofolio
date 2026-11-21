@@ -51,11 +51,7 @@
           >
             <span
               class="brand-mark theme-surface theme-border flex h-9 w-9 items-center justify-center rounded-xl border transition duration-300 group-hover:rotate-6 group-hover:border-soft/40"
-              ><img
-                src="assets/images/logo-ijal.png"
-                alt=""
-                class="brand-logo h-6 w-6 object-contain"
-              /></span>
+              ><img src="assets/images/logo-ijal.png" alt="Ijal Logo" width="24" height="24" loading="eager" class="brand-logo h-6 w-6 object-contain" /></span>
             <span
               >Ijal's <span class="text-soft">Creative</span> Portfolio</span
             >
@@ -169,7 +165,7 @@
             my personal website, and photography.
           </p>
         </section>
-        <section class="mt-10 grid gap-5 md:grid-cols-2">
+        <section class="mt-10 grid gap-5 md:grid-cols-2" data-portfolio-container>
           <article
             class="theme-surface card-hover reveal rounded-3xl border border-white/10 bg-secondary/25 p-6"
           >
@@ -341,6 +337,9 @@
       </main>
       <div
         data-project-modal
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-project-title"
         class="modal-backdrop fixed inset-0 z-[70] flex items-center justify-center bg-black/80 p-5"
       >
         <div

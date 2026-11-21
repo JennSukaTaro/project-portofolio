@@ -1,0 +1,3 @@
+# Local optimization backups (keep host repo lightweight)
+.backups_before_optimization/
+assets/images/_originals/

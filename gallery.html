@@ -51,11 +51,7 @@
           >
             <span
               class="brand-mark theme-surface theme-border flex h-9 w-9 items-center justify-center rounded-xl border transition duration-300 group-hover:rotate-6 group-hover:border-soft/40"
-              ><img
-                src="assets/images/logo-ijal.png"
-                alt=""
-                class="brand-logo h-6 w-6 object-contain"
-              /></span>
+              ><img src="assets/images/logo-ijal.png" alt="Ijal Logo" width="24" height="24" loading="eager" class="brand-logo h-6 w-6 object-contain" /></span>
             <span
               >Ijal's <span class="text-soft">Creative</span> Portfolio</span
             >
@@ -182,17 +178,22 @@
             <i class="fa-solid fa-play mr-1"></i> Videos
           </button>
         </section>
-        <section class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <section class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3" data-gallery-grid>
           <article
             data-gallery-category="photo"
             data-gallery-title="Cute Cat"
             data-gallery-description="A curious little cat enjoying a quiet moment, captured in a warm and playful frame."
-            data-image="assets/images/photo-kucing.jpg"
+            data-image="assets/images/photo-kucing.webp"
             class="gallery-item card-hover reveal cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-secondary/25"
           >
             <div class="media-zoom">
               <img
-                src="assets/images/photo-kucing.jpg"
+                src="assets/images/photo-kucing.webp"
+                srcset="assets/images/photo-kucing-600.webp 600w, assets/images/photo-kucing.webp 1200w"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                width="1200"
+                height="767"
+                loading="lazy"
                 alt="Cute cat"
                 class="aspect-[4/3] w-full object-cover"
               />
@@ -227,7 +228,10 @@
           >
             <div class="media-zoom relative">
               <img
-                src="assets/images/thumbnail-video-angkatan.png"
+                src="assets/images/thumbnail-video-angkatan.webp"
+                width="352"
+                height="549"
+                loading="lazy"
                 alt="Classmates' memories before their farewell"
                 class="aspect-[4/3] w-full object-cover"
               />
@@ -264,12 +268,17 @@
             data-gallery-category="photo"
             data-gallery-title="Shared Laughter"
             data-gallery-description="A candid moment of laughter that captures the warmth and joy of being together."
-            data-image="assets/images/photo-people-tertawa.jpg"
+            data-image="assets/images/photo-people-tertawa.webp"
             class="gallery-item card-hover reveal cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-secondary/25"
           >
             <div class="media-zoom">
               <img
-                src="assets/images/photo-people-tertawa.jpg"
+                src="assets/images/photo-people-tertawa.webp"
+                srcset="assets/images/photo-people-tertawa-600.webp 600w, assets/images/photo-people-tertawa.webp 1200w"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                width="1200"
+                height="800"
+                loading="lazy"
                 alt="People sharing a laugh"
                 class="aspect-[4/3] w-full object-cover"
               />
@@ -297,12 +306,17 @@
             data-gallery-category="photo"
             data-gallery-title="Sunset Over the City"
             data-gallery-description="A golden sunset over the city, photographed at the end of the day."
-            data-image="assets/images/sunset.jpeg"
+            data-image="assets/images/sunset.webp"
             class="gallery-item card-hover reveal cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-secondary/25"
           >
             <div class="media-zoom">
               <img
-                src="assets/images/sunset.jpeg"
+                src="assets/images/sunset.webp"
+                srcset="assets/images/sunset-600.webp 600w, assets/images/sunset.webp 1200w"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                width="675"
+                height="1200"
+                loading="lazy"
                 alt="Sunset glowing over the city skyline"
                 class="aspect-[4/3] w-full object-cover"
               />
@@ -330,12 +344,17 @@
             data-gallery-category="photo"
             data-gallery-title="Halloween at Galaxy Mall"
             data-gallery-description="A colorful display of Halloween decorations and spooky store props at Galaxy Mall Surabaya."
-            data-image="assets/images/haloween.jpeg"
+            data-image="assets/images/haloween.webp"
             class="gallery-item card-hover reveal cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-secondary/25"
           >
             <div class="media-zoom">
               <img
-                src="assets/images/haloween.jpeg"
+                src="assets/images/haloween.webp"
+                srcset="assets/images/haloween-600.webp 600w, assets/images/haloween.webp 1200w"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                width="1200"
+                height="675"
+                loading="lazy"
                 alt="Halloween pumpkins and decorations at a store in Galaxy Mall Surabaya"
                 class="aspect-[4/3] w-full object-cover"
               />
@@ -372,7 +391,12 @@
           >
             <div class="media-zoom relative">
               <img
-                src="assets/images/09_10_2026_Cover Berita_DEE.png"
+                src="assets/images/cover-berita-dee.webp"
+                srcset="assets/images/cover-berita-dee-600.webp 600w, assets/images/cover-berita-dee.webp 960w"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                width="960"
+                height="1200"
+                loading="lazy"
                 alt="PENS Mentoring 2026 Instagram feed cover"
                 class="aspect-[4/3] w-full object-cover"
               />
@@ -409,6 +433,9 @@
       </main>
       <div
         data-gallery-modal
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="gallery-modal-title"
         class="modal-backdrop fixed inset-0 z-[70] flex items-center justify-center bg-black/80 p-5"
       >
         <div
