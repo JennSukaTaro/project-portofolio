@@ -1,7 +1,13 @@
+
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Pengaturan dokumen: karakter, tampilan responsif, metadata, ikon, dan stylesheet. -->
+    <!-- ======================================================================
+         MODUL 02: DOKUMEN HEAD & METADATA STANDAR WEB
+         - UTF-8: Karakter encoding universal
+         - Viewport: Kunci Responsive Web Design (skala 1:1 di mobile)
+         - Meta Description & Theme-color: Standar SEO dan UI browser seluler
+         ====================================================================== -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- agar tampilan web responsif di berbagai perangkat -->
     <meta
@@ -38,7 +44,11 @@
   </head>
   <body class="theme-text min-h-screen bg-primary text-white antialiased">
     <div class="page-shell">
-      <!-- Header tetap di atas layar; data-navbar menjadi penanda untuk JavaScript. -->
+      <!-- ======================================================================
+           MODUL 03 & 06: TAG SEMANTIK HEADER & FLEXBOX NAVIGASI UTAMA
+           - <header>: Kepala halaman tetap di atas (position: fixed)
+           - <nav>: Landmark semantik navigasi utama untuk screen reader
+           ====================================================================== -->
       <header
         data-navbar
         class="theme-nav fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-primary/65 backdrop-blur-xl transition-all duration-500"
@@ -139,7 +149,11 @@
       </header>
       <!-- Konten utama halaman portfolio. -->
       <main>
-        <!-- Hero: perkenalan singkat, ajakan melihat karya/profil, dan gambar utama. -->
+        <!-- ======================================================================
+             MODUL 02 & 03: HERO SECTION DENGAN TEPAT SATU <h1>
+             - Sesuai standar W3C & A11y: 1 dokumen hanya memiliki satu <h1> utama
+             - Hierarki teks jelas: section-label -> h1 -> p
+             ====================================================================== -->
         <section class="relative overflow-hidden">
           <div class="hero-glow"></div>
           <div
@@ -189,6 +203,11 @@
                   <i class="fa-solid fa-wand-magic-sparkles text-xl"></i>
                 </div>
                 <div class="media-zoom overflow-hidden rounded-[1.5rem]">
+                  <!-- MODUL 11: OPTIMASI GAMBAR HERO LCP (LARGEST CONTENTFUL PAINT)
+                       - WebP: Format modern terkompresi (turun dari 18MB ke 22KB)
+                       - srcset & sizes: Melayani ukuran tepat untuk desktop vs mobile
+                       - loading="eager" & fetchpriority="high": Prioritas download instan
+                       - width & height: Mencegah Cumulative Layout Shift (CLS) -->
                   <img
                     src="assets/images/photo-profile.webp"
                     srcset="assets/images/photo-profile-500.webp 500w, assets/images/photo-profile.webp 1000w"
@@ -774,6 +793,7 @@
                 about technology and creative work, feel free to reach out.
               </p>
               <div class="mt-7 flex flex-wrap gap-3">
+                <!-- MODUL 03: IN-PAGE ANCHOR NAVIGATION (Menuju #contact di profile.html) -->
                 <a href="profile.html#contact" class="btn-primary"
                   ><i class="fa-solid fa-paper-plane"></i> Get in touch</a
                 ><a href="gallery.html" class="btn-secondary"

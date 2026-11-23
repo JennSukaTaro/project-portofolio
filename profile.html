@@ -156,6 +156,7 @@
         <section class="grid gap-8 md:grid-cols-[.75fr_1.25fr] md:items-center">
           <div class="reveal">
             <div class="rounded-3xl border border-white/10 bg-secondary/25 p-3">
+              <!-- MODUL 11: RESPONSIVE WEBP AVATAR (Mencegah CLS dengan width/height) -->
               <img
                 src="assets/images/photo-profile.webp"
                 srcset="assets/images/photo-profile-500.webp 500w, assets/images/photo-profile.webp 1000w"
@@ -347,6 +348,13 @@
             </div>
           </div>
         </section>
+        <!-- ======================================================================
+             MODUL 03 & MODUL 10: FORMULIR KONTAK SEMANTIK & VALIDASI JS
+             - <section id="contact">: Target jangkar dari tombol 'Get in touch'
+             - <form id="contact-form" novalidate>: Validasi ditangani Vanilla JS
+             - <label for="...">: Terhubung wajib dengan ID input (A11y Standar)
+             - role="alert": Kotak pesan yang otomatis dibacakan Screen Reader
+             ====================================================================== -->
         <section
           id="contact"
           class="theme-surface reveal mt-20 rounded-3xl border border-white/10 bg-gradient-to-br from-accent/35 to-secondary/20 p-8 md:p-10"

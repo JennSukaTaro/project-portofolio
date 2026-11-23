@@ -165,6 +165,11 @@
             my personal website, and photography.
           </p>
         </section>
+        <!-- ======================================================================
+             MODUL 10: PORTOFOLIO GRID DENGAN EVENT DELEGATION & DATA ATTRIBUTES
+             - data-portfolio-container: Kontainer induk pembaca event klik tombol
+             - data-title, data-category, data-*: Data proyek dibaca dinamis
+             ====================================================================== -->
         <section class="mt-10 grid gap-5 md:grid-cols-2" data-portfolio-container>
           <article
             class="theme-surface card-hover reveal rounded-3xl border border-white/10 bg-secondary/25 p-6"
@@ -335,6 +340,11 @@
           </article>
         </section>
       </main>
+      <!-- ======================================================================
+             MODUL 07 & 10: DETAIL MODAL DIALOG DENGAN WAI-ARIA & XSS PROTECTION
+             - role="dialog" & aria-modal="true": Dialog aksesibel
+             - Data teks disuntik via textContent untuk keamanan dari celah XSS
+             ====================================================================== -->
       <div
         data-project-modal
         role="dialog"

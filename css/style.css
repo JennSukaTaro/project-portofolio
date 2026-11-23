@@ -1,3 +1,19 @@
+/* ==========================================================================
+   WORKSHOP DESAIN WEB — STYLESHEET ARSITEKTUR NATIVE
+   File: css/style.css
+   
+   KORELASI MATERI KULIAH:
+   - Modul 04: CSS Fundamentals, :root Custom Properties & Tipografi
+   - Modul 05: Box Model (padding, border, margin) & Positioning (Fixed, Relative, Absolute)
+   - Modul 06: Flexbox Layouts (Navbar, Cards, Alignment, Wrap)
+   - Modul 07: Responsive Web Design & Aksesibilitas (prefers-reduced-motion)
+   - Modul 10: Formulir Kontak Semantik & Alert Feedback
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   MODUL 04: CSS VARIABLES (:root)
+   Fungsi: Sentralisasi token warna tema (Primary, Secondary, Accent, Soft)
+   -------------------------------------------------------------------------- */
 :root {
   --primary: #22202e;
   --secondary: #3f3c4f;
@@ -8,6 +24,10 @@
   --ink: #181720;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
+/* --------------------------------------------------------------------------
+   MODUL 05: SCROLL BEHAVIOR & PADDING NAVIGASI
+   Fungsi: Gulir halus (smooth) dan offset 90px agar anchor tidak tertutup navbar
+   -------------------------------------------------------------------------- */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
@@ -71,6 +91,10 @@ body::before {
   background: rgba(181, 150, 173, 0.08);
   color: #fff;
 }
+/* --------------------------------------------------------------------------
+   MODUL 06: FLEXBOX UNTUK ELEMEN MENU NAVIGASI
+   Fungsi: Flex container horizontal, alignment ikon dan teks, efek aktif
+   -------------------------------------------------------------------------- */
 .nav-link {
   position: relative;
   display: flex;
@@ -549,6 +573,10 @@ html.light :focus-visible {
 img {
   max-width: 100%;
 }
+/* --------------------------------------------------------------------------
+   MODUL 07: AKSI AKSESIBILITAS (PREFERS-REDUCED-MOTION)
+   Fungsi: Mematikan animasi bagi pengguna sensitif gerak (vestibular disorder)
+   -------------------------------------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

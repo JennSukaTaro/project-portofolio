@@ -178,6 +178,11 @@
             <i class="fa-solid fa-play mr-1"></i> Videos
           </button>
         </section>
+        <!-- ======================================================================
+             MODUL 06/07 & 11: CSS GRID RESPONSIF (1, 2, 3 KOLOM) & LAZY ASSETS
+             - sm:grid-cols-2 lg:grid-cols-3: Responsif mobile-first
+             - data-gallery-grid: Kontainer induk event delegation klik modal foto
+             ====================================================================== -->
         <section class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3" data-gallery-grid>
           <article
             data-gallery-category="photo"
@@ -431,6 +436,12 @@
           </a>
         </section>
       </main>
+      <!-- ======================================================================
+             MODUL 07: ACCESSIBLE MODAL DIALOG (WAI-ARIA COMPLIANT)
+             - role="dialog": Memberitahu screen reader ini adalah jendela interaktif
+             - aria-modal="true": Mengisolasi navigasi saat dialog aktif
+             - aria-labelledby: Terhubung dengan judul gambar di dalam modal
+             ====================================================================== -->
       <div
         data-gallery-modal
         role="dialog"
