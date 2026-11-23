@@ -852,6 +852,7 @@ html.light .cta-panel {
   );
   border-color: rgba(92, 74, 120, 0.16);
 }
+/*---ini buat responsive---*/
 @media (max-width: 640px) {
   .stat-card {
     min-height: 72px;
