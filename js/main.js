@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Dynamic Year di footer
   document
-    .querySelectorAll("[data-year]")
+    .querySelectorAll("footer [data-year]")
     .forEach((e) => (e.textContent = new Date().getFullYear()));
 
   // ==========================================================================
